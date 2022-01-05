@@ -8,12 +8,19 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
- * <b>基础控制层类</b>
+ * <b>基础信息功能 - 基础控制层类</b>
+ * <p>
+ *     基础控制层依赖注入了如下属性：<br/>
+ *     1、HttpServletRequest<br/>
+ *     2、HttpServletResponse<br/>
+ *     3、HttpSession<br/>
+ *     本项目所有功能控制层类<b>都必须继承于本基础控制层类</b>。
+ * </p>
  *
- * @author Arthur
- * @date
- * @since 1.0.0
+ * @author
+ * @date 2021/12/29
  * @version 1.0.0
+ * @since 1.0.0
  */
 @Controller("baseController")
 public class BaseController {
@@ -24,4 +31,3 @@ public class BaseController {
 	@Autowired
 	protected HttpSession session;
 }
-
