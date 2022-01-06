@@ -4,42 +4,20 @@ import com.whackon.witmed.base.pojo.entity.BaseEntity;
 import lombok.Data;
 
 /**
- * <b>系统功能 - 系统用户角色实体信息</b>
- *
- * @author
- * @date 2022/1/4
+* <b>系统功能 - 系统用户实体信息</b>
+ * @author Arthur
+ * @date 2022/1/5
  * @version 1.0.0
  * @since 1.0.0
- */
+*/
 @Data
 public class Role extends BaseEntity {
-	private static final long serialVersionUID = 3832012392097686144L;
-	private long id;                             //主键
-	private String code;                         //角色编码
-	private String name;                         //角色名称
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	public String getCode() {
-		return code;
-	}
-
-	public void setCode(String code) {
-		this.code = code;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
+	private Long id;                        // 主键
+	private String code;                        // 角色编码
+	private String name;                        // 角色名称
+	private String status;                        // 系统状态：0-禁用，1-启用
+	private String createdBy;                        // 创建人
+	private Date createdTime;                        // 创建时间
+	private String modifiedBy;                        // 修改人
+	private Date modifiedTime;                        // 修改时间
 }
-
