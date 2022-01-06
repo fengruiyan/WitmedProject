@@ -1,4 +1,4 @@
-package com.whackon.witmed.base.util.vo;
+package com.whackon.witmed.base.vo;
 
 import com.whackon.witmed.base.pojo.vo.BaseVO;
 import lombok.Data;

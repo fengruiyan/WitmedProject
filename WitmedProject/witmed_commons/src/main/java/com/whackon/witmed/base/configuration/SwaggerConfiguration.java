@@ -1,8 +1,5 @@
 package com.whackon.witmed.base.configuration;
 
-import com.whackon.witmed.base.util.BaseConstants;
-import com.whackon.witmed.base.util.BaseConstants;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 ;
 
